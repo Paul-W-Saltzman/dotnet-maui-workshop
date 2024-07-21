@@ -1,5 +1,10 @@
 ﻿namespace MonkeyFinder.ViewModel;
 
-public class BaseViewModel
+[INotifyPropertyChanged]
+public partial class BaseViewModel 
 {
+    bool isBusy;
+    string title;
+
+    //public bool IsNotBusy => !IsBusy;
 }
